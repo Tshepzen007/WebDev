@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+    
+        body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+          display: grid;
+          grid-template-rows: auto 1fr auto; /* Define three rows for header, content, and footer */
+          min-height: 100vh; /* Set minimum viewport height to cover the entire screen */
+        }
+        header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 1rem;
+          background-color: #f0f0f0;
+        }
+        header img {
+          width: 150px;
+        }
+        nav {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+        nav li {
+          display: inline-block;
+          margin-right: 1rem;
+        }
+        nav a {
+          text-decoration: none;
+          color: black;
+        }
+        main {
+          padding: 1rem;
+          display: grid;
+          grid-template-columns: 1fr 2fr; /* Divide content area into two columns */
+          grid-gap: 1rem; /* Add gap between columns */
+        }
+        main .content {
+          background-color: #f5f5f5; /* Light background color for content section */
+          padding: 1rem;
+        }
+        main .image {
+          /* Styles for the image section */
+          text-align: center; /* Center content within the image section */
+    
+        }
+        
+        .image img {
+          border-radius: 50%; /* Set the border-radius to 50% for a circle */
+          /* Note: Ensure the image has a width and height set */
+          width: 300px; /* Adjust width as needed */
+          height: 300px; /* Adjust height as needed */
+          margin-left: auto; /* Right-align the image within its section */
+        }
+        footer {
+      background-color: #e0e0e0;
+      padding: 1rem;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr; /* Define columns */
+      grid-template-rows: auto auto; /* Define rows */
+    }
+    
+    footer p:first-child {
+      grid-column: 4; /* Place email address in third column */
+      grid-row: 1; /* Place email address in first row */
+    }
+    
+    footer p:nth-child(2) {
+      grid-column: 2; /* Place additional links in second column */
+      grid-row: 1; /* Place additional links in first row */
+    }
+    
+    footer p:last-child {
+      grid-column: 1 / span 3; /* Span social media icons across all columns */
+      grid-row: 2; /* Place social media icons in second row */
+      justify-content: flex-start; /* Align icons to the left */
+      align-items: center;
+    }
+    
+    footer p img {
+      margin-right: 10px;
+    }
+    
+    footer iframe {
+      grid-column: 3; /* Place map in third column */
+      grid-row: 1; /* Place map in first row */
+    }
+      </style>
+</head>
+<body>
+    <header>
+        <img src="assets/Images/logo.PNG">
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About Me</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <p>“Life isn’t about finding yourself. Life is about creating yourself” - George Bernard Shaw
+        Allow me to formally introduce myself. My name is Tshepang Ramonyadiwa and I am a BSc Computer Science graduate who majored in both Computer Science and Mathematics at the Nelson Mandela University . In my final year of study, I went beyond the scope by implementing APIs which would assist in mechanism such as sending an SMS and Email with the booking confirmation as well as a link which consisted of a QR Code to scan. This was done in ASP.Net framework as well as C#. As I result, I got a distinction for my contribution towards the project 
+         In addition, I am an official member of the Golden Key International Honours Society who aspires to become a Software Developer. 
+        To add onto that , my passions lie in the tech industry. As a result, I tend to read up on the latest technological advances in my leisure. 
+        In addition, my hobbies include growing social connections with other talented individuals in tech space as well as playing football with friends.
+        In closure,the game of football is one to be admired. Thus, I have come to an epiphany:  life is like the game itself, you must have goals. My biggest goal is to make a contribution through emerging technologies such as AI, Web 3.0 and Blockchain in the near future.
+        </p>
+</body>
+</html>
