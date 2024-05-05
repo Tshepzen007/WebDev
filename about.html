@@ -1,106 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <img src="assets/Images/NewLogo.png">
-        <nav>
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About Me</a></li>
-            <li><a href="./contact.html">Contact Us</a></li>
-          </ul>
-        </nav>
-      </header>
+  <header>
+    <img src="assets/Images/NewLogo.png">
+    <nav>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About Me</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
 
-      <main>
-        <div class="container">
-          <div class="text-center mb-4">
-            <img class="profile-pic" src="assets/Images/me.PNG" alt="Profile Picture">
-            <h1>Tshepang Ramonyadiwa</h1>
-            <div class="social-icons">
-              <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
-                <i class="ri-twitter-line" style="font-size: 24px;"></i>
-              </a>
-              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                <i class="ri-instagram-line" style="font-size: 24px;"></i>
-              </a>
-              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-                <i class="ri-facebook-circle-line" style="font-size: 24px;"></i>
-              </a>
-            </div>
-          </div>
-    
-          <hr>
-    
-          <h2>Personal Information</h2>
-          <p>
-            I am a passionate and driven individual with a deep interest in technology and software development. Born and raised in Mahikeng, South Africa, I have always been fascinated by the ever-evolving world of technology and its ability to solve complex problems.
-          </p>
-    
-          <hr>
-    
-          <h2>Educational Background</h2>
-          <p>
-            I recently graduated with a BSc in Computer Science from the Nelson Mandela University, where I majored in both Computer Science and Mathematics. During my studies, I had the opportunity to delve into various programming languages (namely Java,C# and MATLAB), algorithms, and software development methodologies, which solidified my passion for this field.
-          </p>
-    
-          <hr>
-    
-          <h2>Projects</h2>
-          <ul>
-            <li>
-              <h3>Personal Portfolio Website</h3>
-              <p>A responsive and visually appealing website showcasing my skills, projects, and experience. Built using HTML, CSS, and JavaScript.</p>
-            </li>
-            <li>
-              <h3>Passport Collection Booking System</h3>
-              <p>A web-based application that allows users to reserve a specfic day for which they would like to collect their passports from the local authorizing party (ie. Home Affairs). They would then recieve their booking confirmation via sms, email or both (depending on their selection) which consists of a QR Code that must be presented on the day of collection.
-                 The aim of this project was to enable the citizen to collect their passports without having to wait long queues for hours.
-                This solution was built using ASP.Net,C#, Twilio API for sms mechanism as well as Outlook API for email mechanism.</p>
-            </li>
-          </ul>
-    
-          <hr>
-    
-          <h2>Work Experience</h2>
-          <p>
-           A recent graduate with no job experience yet.
-          </p>
-    
-          <hr>
-    
-          <h2>Additional Information</h2>
-          <p>
-            I am a member of the Golden Key International Honours Society, which recognizes academic excellence and outstanding achievements. Additionally, I am an avid learner and keep myself updated with the latest trends and technologies in the industry, such as AI and machine learning.
-          </p>
-        </div>
-      </main>
+  <main>
+    <div class="container">
+      <div class="text-center mb-4">
+        <img class="profile-pic" src="assets/Images/me.PNG" alt="Profile Picture">
+        <h1 id="nameHeading"></h1>
+        <div class="social-icons" id="socialIcons"></div>
+      </div>
 
-    <footer>
-      <p><iframe width="150" height="100" id="map"
-          src="https://www.google.com/maps/embed/v1/place?q=Pretoria+Union+Buildings&key=AIzaSyBw-xGAGABXTPNWKOX8vnBBu3U">
-      </iframe></p>
-      <p><a href="https://github.com/Tshepzen007">GitHub Profile </a></p>
-      <p><a href="mailto:tmramonyadiwa@gmail.com">Email Me</a></p>
-      <p>
-        <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
-          <i class="ri-twitter-line" style="font-size: 24px;"></i>
-        </a>
-        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-          <i class="ri-instagram-line" style="font-size: 24px;"></i>
-        </a>
-        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-          <i class="ri-facebook-circle-line" style="font-size: 24px;"></i>
-        </a>
-      </p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpIdKSbTNOlGOHrUyxQyJSgXbNXNCG/7U/dIaNhhx9fq2vV48" crossorigin="anonymous"></script>
+      <hr>
+
+      <h2>Personal Information</h2>
+      <p id="bioDescription"></p>
+      <hr>
+      <h2>Educational Background</h2>
+      <p id="educationalBackgroundDescription"></p>
+      <hr>
+      <h2>Projects</h2>
+      <ul id="projectsList"></ul>
+      <hr>
+      <h2>Work Experience</h2>
+      <p id="workExperienceDescription"></p>
+      <hr>
+      <h2>Additional Information</h2>
+      <p id="additionalInfoDescription"></p>
+    </div>
+  </main>
+  <footer>
+    <p><iframe width="150" height="100" id="map" src="https://www.google.com/maps/embed/v1/place?q=Pretoria+Union+Buildings&key=AIzaSyBw-xGAGABXTPNWKOX8vnBBu3U"></iframe></p>
+    <p><a href="https://github.com/Tshepzen007">GitHub Profile</a></p>
+    <p><a href="mailto:tmramonyadiwa@gmail.com">Email Me</a></p>
+    <p>
+      <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
+        <i class="ri-twitter-line" style="font-size: 24px;"></i>
+      </a>
+      <a href="https://www.instagram.com/tshepzen__/" target="_blank" rel="noopener noreferrer">
+        <i class="ri-instagram-line" style="font-size: 24px;"></i>
+      </a>
+      <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+        <i class="ri-facebook-circle-line" style="font-size: 24px;"></i>
+      </a>
+    </p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpIdKSbTNOlGOHrUyxQyJSgXbNXNCG/7U/dIaNhhx9fq2vV48" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 </html>
