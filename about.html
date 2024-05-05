@@ -4,99 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    <style>
-    
-        body {
-          margin: 0;
-          font-family: Arial, sans-serif;
-          display: grid;
-          grid-template-rows: auto 1fr auto; /* Define three rows for header, content, and footer */
-          min-height: 100vh; /* Set minimum viewport height to cover the entire screen */
-        }
-        header {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding: 1rem;
-          background-color: #f0f0f0;
-        }
-        header img {
-          width: 150px;
-        }
-        nav {
-          list-style: none;
-          padding: 0;
-          margin: 0;
-        }
-        nav li {
-          display: inline-block;
-          margin-right: 1rem;
-        }
-        nav a {
-          text-decoration: none;
-          color: black;
-        }
-        main {
-          padding: 1rem;
-          display: grid;
-          grid-template-columns: 1fr 2fr; /* Divide content area into two columns */
-          grid-gap: 1rem; /* Add gap between columns */
-        }
-        main .content {
-          background-color: #f5f5f5; /* Light background color for content section */
-          padding: 1rem;
-        }
-        main .image {
-          /* Styles for the image section */
-          text-align: center; /* Center content within the image section */
-    
-        }
-        
-        .image img {
-          border-radius: 50%; /* Set the border-radius to 50% for a circle */
-          /* Note: Ensure the image has a width and height set */
-          width: 300px; /* Adjust width as needed */
-          height: 300px; /* Adjust height as needed */
-          margin-left: auto; /* Right-align the image within its section */
-        }
-        footer {
-      background-color: #e0e0e0;
-      padding: 1rem;
-      display: grid;
-      grid-template-columns: 1fr auto 1fr; /* Define columns */
-      grid-template-rows: auto auto; /* Define rows */
-    }
-    
-    footer p:first-child {
-      grid-column: 4; /* Place email address in third column */
-      grid-row: 1; /* Place email address in first row */
-    }
-    
-    footer p:nth-child(2) {
-      grid-column: 2; /* Place additional links in second column */
-      grid-row: 1; /* Place additional links in first row */
-    }
-    
-    footer p:last-child {
-      grid-column: 1 / span 3; /* Span social media icons across all columns */
-      grid-row: 2; /* Place social media icons in second row */
-      justify-content: flex-start; /* Align icons to the left */
-      align-items: center;
-    }
-    
-    footer p img {
-      margin-right: 10px;
-    }
-    
-    footer iframe {
-      grid-column: 3; /* Place map in third column */
-      grid-row: 1; /* Place map in first row */
-    }
-      </style>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img src="assets/Images/logo.PNG">
+        <img src="assets/Images/NewLogo.png">
         <nav>
           <ul>
             <li><a href="./index.html">Home</a></li>
@@ -106,12 +19,88 @@
         </nav>
       </header>
 
-    <p>“Life isn’t about finding yourself. Life is about creating yourself” - George Bernard Shaw
-        Allow me to formally introduce myself. My name is Tshepang Ramonyadiwa and I am a BSc Computer Science graduate who majored in both Computer Science and Mathematics at the Nelson Mandela University . In my final year of study, I went beyond the scope by implementing APIs which would assist in mechanism such as sending an SMS and Email with the booking confirmation as well as a link which consisted of a QR Code to scan. This was done in ASP.Net framework as well as C#. As I result, I got a distinction for my contribution towards the project 
-         In addition, I am an official member of the Golden Key International Honours Society who aspires to become a Software Developer. 
-        To add onto that , my passions lie in the tech industry. As a result, I tend to read up on the latest technological advances in my leisure. 
-        In addition, my hobbies include growing social connections with other talented individuals in tech space as well as playing football with friends.
-        In closure,the game of football is one to be admired. Thus, I have come to an epiphany:  life is like the game itself, you must have goals. My biggest goal is to make a contribution through emerging technologies such as AI, Web 3.0 and Blockchain in the near future.
-        </p>
+      <main>
+        <div class="container">
+          <div class="text-center mb-4">
+            <img class="profile-pic" src="assets/Images/me.PNG" alt="Profile Picture">
+            <h1>Tshepang Ramonyadiwa</h1>
+            <div class="social-icons">
+              <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
+                <i class="ri-twitter-line" style="font-size: 24px;"></i>
+              </a>
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <i class="ri-instagram-line" style="font-size: 24px;"></i>
+              </a>
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                <i class="ri-facebook-circle-line" style="font-size: 24px;"></i>
+              </a>
+            </div>
+          </div>
+    
+          <hr>
+    
+          <h2>Personal Information</h2>
+          <p>
+            I am a passionate and driven individual with a deep interest in technology and software development. Born and raised in Mahikeng, South Africa, I have always been fascinated by the ever-evolving world of technology and its ability to solve complex problems.
+          </p>
+    
+          <hr>
+    
+          <h2>Educational Background</h2>
+          <p>
+            I recently graduated with a BSc in Computer Science from the Nelson Mandela University, where I majored in both Computer Science and Mathematics. During my studies, I had the opportunity to delve into various programming languages (namely Java,C# and MATLAB), algorithms, and software development methodologies, which solidified my passion for this field.
+          </p>
+    
+          <hr>
+    
+          <h2>Projects</h2>
+          <ul>
+            <li>
+              <h3>Personal Portfolio Website</h3>
+              <p>A responsive and visually appealing website showcasing my skills, projects, and experience. Built using HTML, CSS, and JavaScript.</p>
+            </li>
+            <li>
+              <h3>Passport Collection Booking System</h3>
+              <p>A web-based application that allows users to reserve a specfic day for which they would like to collect their passports from the local authorizing party (ie. Home Affairs). They would then recieve their booking confirmation via sms, email or both (depending on their selection) which consists of a QR Code that must be presented on the day of collection.
+                 The aim of this project was to enable the citizen to collect their passports without having to wait long queues for hours.
+                This solution was built using ASP.Net,C#, Twilio API for sms mechanism as well as Outlook API for email mechanism.</p>
+            </li>
+          </ul>
+    
+          <hr>
+    
+          <h2>Work Experience</h2>
+          <p>
+           A recent graduate with no job experience yet.
+          </p>
+    
+          <hr>
+    
+          <h2>Additional Information</h2>
+          <p>
+            I am a member of the Golden Key International Honours Society, which recognizes academic excellence and outstanding achievements. Additionally, I am an avid learner and keep myself updated with the latest trends and technologies in the industry, such as AI and machine learning.
+          </p>
+        </div>
+      </main>
+
+    <footer>
+      <p><iframe width="150" height="100" id="map"
+          src="https://www.google.com/maps/embed/v1/place?q=Pretoria+Union+Buildings&key=AIzaSyBw-xGAGABXTPNWKOX8vnBBu3U">
+      </iframe></p>
+      <p><a href="https://github.com/Tshepzen007">GitHub Profile </a></p>
+      <p><a href="mailto:tmramonyadiwa@gmail.com">Email Me</a></p>
+      <p>
+        <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
+          <i class="ri-twitter-line" style="font-size: 24px;"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+          <i class="ri-instagram-line" style="font-size: 24px;"></i>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+          <i class="ri-facebook-circle-line" style="font-size: 24px;"></i>
+        </a>
+      </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpIdKSbTNOlGOHrUyxQyJSgXbNXNCG/7U/dIaNhhx9fq2vV48" crossorigin="anonymous"></script>
 </body>
 </html>
