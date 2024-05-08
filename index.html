@@ -2,142 +2,154 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Potfolio</title>
-  <style>
-    
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      display: grid;
-      grid-template-rows: auto 1fr auto; /* Define three rows for header, content, and footer */
-      min-height: 100vh; /* Set minimum viewport height to cover the entire screen */
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem;
-      background-color: #f0f0f0;
-    }
-    header img {
-      width: 150px;
-    }
-    nav {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    nav li {
-      display: inline-block;
-      margin-right: 1rem;
-    }
-    nav a {
-      text-decoration: none;
-      color: black;
-    }
-    main {
-      padding: 1rem;
-      display: grid;
-      grid-template-columns: 1fr 2fr; /* Divide content area into two columns */
-      grid-gap: 1rem; /* Add gap between columns */
-    }
-    main .content {
-      background-color: #f5f5f5; /* Light background color for content section */
-      padding: 1rem;
-    }
-    main .image {
-      /* Styles for the image section */
-      text-align: center; /* Center content within the image section */
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-    }
-    
-    .image img {
-      border-radius: 50%; /* Set the border-radius to 50% for a circle */
-      /* Note: Ensure the image has a width and height set */
-      width: 300px; /* Adjust width as needed */
-      height: 300px; /* Adjust height as needed */
-      margin-left: auto; /* Right-align the image within its section */
-    }
-    footer {
-  background-color: #e0e0e0;
-  padding: 1rem;
-  display: grid;
-  grid-template-columns: 1fr auto 1fr; /* Define columns */
-  grid-template-rows: auto auto; /* Define rows */
-}
-
-footer p:first-child {
-  grid-column: 4; /* Place email address in third column */
-  grid-row: 1; /* Place email address in first row */
-}
-
-footer p:nth-child(2) {
-  grid-column: 2; /* Place additional links in second column */
-  grid-row: 1; /* Place additional links in first row */
-}
-
-footer p:last-child {
-  grid-column: 1 / span 3; /* Span social media icons across all columns */
-  grid-row: 2; /* Place social media icons in second row */
-  justify-content: flex-start; /* Align icons to the left */
-  align-items: center;
-}
-
-footer p img {
-  margin-right: 10px;
-}
-
-footer iframe {
-  grid-column: 3; /* Place map in third column */
-  grid-row: 1; /* Place map in first row */
-}
-  </style>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
 </head>
+
 <body>
-  <header>
-    <img src="assets/Images/logo.PNG">
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="./about.html">About Me</a></li>
-        <li><a href="./contact.html">Contact Us</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <video width="100%" height="400" controls autoplay muted>
-    <source src="assets/Videos/promo.mp4" type="video/mp4">
-  </video>
-  <main>
-    <section class="content">
-      <h2>Tshepang Ramonyadiwa</h2>
-      <p>A BSc Computer Science graduate who majored in both Computer Science and Mathematics. In addition, I am a member of the Golden
-        Key International Honours Society who aspires to become a Software Developer. Lastly, my passions lie in the tech industry and I seek
-        to make my contribution through emerging technologies such as AI, Web 3.0 and Blockchain in the near future.</p>
-    </section>
-    <section class="image">
-      <img src="assets/Images/me.PNG">
-    </section>
-  </main>
-  
-<footer>
-    <p><iframe width="150" height="100" id="map"
-        src="https://www.google.com/maps/embed/v1/place?q=Pretoria+Union+Buildings&key=AIzaSyBw-xGAGABXTPNWKOX8vnBBu3U">
-    </iframe></p>
-  <p><a href="#">+27790850208</a></p>
-  <p><a href="mailto:tmramonyadiwa@gmail.com">tmramonyadiwa@gmail.com</a></p>
-  <p>
-    <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
-      <img src="assets/Images/Twitter.PNG" width="24" height="24">
-    </a>
-    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-      <img src="assets/Images/IG.PNG"  width="24" height="24">
-    </a>
-    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-      <img src="assets/Images/FB.PNG" width="24" height="24">
-    </a>
-  </p>
-</footer>
+  <div class="container p-0 w-100">
+    <div class="row no-gutters h-100">
+      <div class="col-12 header">
+        <img src="images/desktop/image-header.jpg" class="img-fluid" alt="Image 1">
+        <div class="logo">
+          <img src="images/logo.svg" class="img-fluid" >
+        </div>
+        <div class="nav">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Projects</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="header-text1" id="headerText"></div>
+      </div>
+    </div>
+    <div class="row no-gutters">
+      <div class="col-md-6 col-12 position-relative">
+        <img src="images/desktop/peach.JPG" class="img-fluid" alt="Image 7">
+        <div class="image-content">
+          <h2 id="transformBrandHeading"></h2>
+          <p id="transformBrandDescription"></p>
+          <a href="#" id="transformBrandLink"></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-12">
+        <img src="images/desktop/image-transform.jpg" class="img-fluid" alt="Image 3">
+      </div>
+    </div>
+    <div class="row no-gutters">
+      <div class="col-md-6 col-12">
+        <img src="images/desktop/image-stand-out.jpg" class="img-fluid" alt="Image 4">
+      </div>
+      <div class="col-md-6 col-12">
+        <img src="images/desktop/peach.JPG" class="img-fluid" alt="Image 7">
+        <div class="image-content">
+          <h2 id="standOutHeading"></h2>
+          <p id="standOutDescription"></p>
+          <a href="#" id="standOutLink"></a>
+        </div>
+      </div>
+    </div>
+    <div class="row no-gutters">
+      <div class="col-md-6 col-12 position-relative">
+        <img src="images/desktop/image-graphic-design.jpg" class="img-fluid" alt="Image 6">
+        <div class="image-content">
+          <h2 id="graphicDesignHeading"></h2>
+          <p id="graphicDesignDescription"></p>
+          <a href="#" id="graphicDesignLink"></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-12 position-relative">
+        <img src="images/desktop/image-photography.jpg" class="img-fluid" alt="Image 7">
+        <div class="image-content">
+          <h2 id="photographyHeading"></h2>
+          <p id="photographyDescription"></p>
+        </div>
+      </div>
+    </div>
+    <div class="row no-gutters">
+      <div class="col-12">
+        <img src="images/desktop/peach.JPG" class="img-fluid" alt="Image 7">
+        <div class="image-content1">
+          <div class="row no-gutters">
+            <div class="col-12">
+              <h2 class="text-center" id="testimonialHeading"></h2>
+            </div>
+            <div class="testimonial-container d-flex justify-content-center" id="testimonialContainer"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row no-gutters">
+      <div class="col-md-3 col-12">
+        <img src="images/desktop/image-gallery-milkbottles.jpg" class="img-fluid" alt="Image 9">
+      </div>
+      <div class="col-md-3 col-12">
+        <img src="images/desktop/image-gallery-orange.jpg" class="img-fluid" alt="Image 10">
+      </div>
+      <div class="col-md-3 col-12">
+        <img src="images/desktop/image-gallery-cone.jpg" class="img-fluid" alt="Image 11">
+      </div>
+      <div class="col-md-3 col-12">
+        <img src="images/desktop/image-gallery-sugarcubes.jpg" class="img-fluid" alt="Image 12">
+      </div>
+    </div>
+    <div class="row no-gutters h-100">
+      <div class="col-12">
+        <img src="images/desktop/mint.JPG" class="img-fluid" alt="Image 7">
+
+
+        <div class="header-text2">
+
+          <div class="row no-gutters footer">
+            <div class="col-12 d-flex flex-column justify-content-center align-items-center py-4">
+              <img src="images/logo.svg" alt="Sunnyside Logo" class="img-fluid mb-4">
+              <nav class="d-flex mb-4">
+                <a href="#" class="text-white mx-3">About Us</a>
+                <a href="#" class="text-white mx-3">Services</a>
+                <a href="#" class="text-white mx-3">Projects</a>
+              </nav>
+              <div class="d-flex">
+                <a href="#" class="mx-2">
+                  <img src="images/icon-facebook.svg" alt="Facebook" class="social-icon mx-3" onmouseover="this.style.opacity = 0.7" onmouseout="this.style.opacity = 1">
+                </a>
+                <a href="#" class="mx-2">
+                  <img src="images/icon-instagram.svg" alt="Instagram" class="social-icon mx-3" onmouseover="this.style.opacity = 0.7" onmouseout="this.style.opacity = 1">
+                </a>
+                <a href="#" class="mx-2">
+                  <img src="images/icon-twitter.svg" alt="Twitter" class="social-icon mx-3" onmouseover="this.style.opacity = 0.7" onmouseout="this.style.opacity = 1">
+                </a>
+                <a href="#" class="mx-2">
+                  <img src="images/icon-pinterest.svg" alt="Pinterest" class="social-icon mx-3" onmouseover="this.style.opacity = 0.7" onmouseout="this.style.opacity = 1">
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="attribution">
+            Bootcamp 2023 by
+            <a href="https://www.mlab.co.za" target="_blank">CodeTribe</a>. Developed
+            by <a href="https://tshepzen007.github.io">Tshepang Ramonyadiwa https://tshepzen007.github.io</a>.
+          </div>
+        
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="content.js"></script>
+  <script src="app.js"></script>
 </body>
+
 </html>
+
+<!-- Source Frontend Mentor: https://www.frontendmentor.io -->
